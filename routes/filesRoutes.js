@@ -60,7 +60,7 @@ filesRoutes.get('/data/:fileName', async (req, res) => {
 
         // Checks if the file exists
         if(!csv){
-            res.send('File not found').status(400);
+            res.status(400).send('File not found');
             return
         }
 

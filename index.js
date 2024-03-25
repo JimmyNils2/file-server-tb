@@ -16,3 +16,8 @@ app.use('/files', filesRoutes);
 
 // Starts the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+module.exports = {
+    app
+}
